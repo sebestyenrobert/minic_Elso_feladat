@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Comin</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- flex grid rendszer használatához -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
+  <!-- betűtípus a Comin logohoz-->
+  <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet"> 
+
+  <!-- betűtípus a menühöz -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -22,8 +31,49 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- az oldal tartalma itt kezdődik -->
+  <header>
+    <div>
+      <ul id="nav" class="container">
+          <li id="logo">
+            <a href="#">
+              Comin
+            </a>
+          </li> 
+          <li>
+            <a href="#" class="item">
+              Products
+            </a>  
+          </li>
+          <li>
+            <a href="#" class="item">
+             About Us
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              Blog
+            </a>
+          </li>
+          <li id="download">
+            <a href="#">
+              Download the app
+            </a>
+          </li>
+          <li id="lang">
+            <a href="#">
+              en
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div id="content">
+      
+    </div>
+
+  </header>
+  <!-- az oldal tartalma itt véget ér -->
+
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>

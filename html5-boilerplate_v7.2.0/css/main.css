@@ -262,5 +262,93 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+
+}
+
+/* Saját css */
+
+body {
+  background-color: rgb(5, 135, 163);
+  /* background-image: linear-gradient( rgb(5, 135, 163), white); */
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 7;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a:link {
+  color:white;
+}
+
+li a:visited {
+  color:white;
+}
+
+li a:hover {
+  color:black;
+}
+
+li a:active {
+  color:white;
+}
+
+#logo {
+  margin-left: 0em;
+  margin-right: 8em;
+  /* display: inline-block; */
+}
+
+#logo a {
+  padding: 0em 0.6em 0.1em 0.6em;
+  font-family: 'Beth Ellen', cursive;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-spacing: 100px;
+}
+
+#logo a:hover {
+  color: white;
+}
+
+#nav {
+  font-family: 'Rubik', sans-serif;
+  /* display: inline-block; */
+}
+
+#download {
+  margin-left: 8em;
+  margin-right: 1em;
+  color: rgb(5, 135, 163);
+  display: inline-block;
+}
+
+#download a {
+  display: inline-block;
+  color: rgb(31, 195, 207);
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#lang {
+  /* display: inline-block; */
 }
 
