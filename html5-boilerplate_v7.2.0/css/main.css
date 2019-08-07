@@ -279,21 +279,38 @@ body {
   padding: 20px;
 }
 
+#logo {
+  font-family: 'Beth Ellen', cursive;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 70px;
+  padding: 0px 10px 5px 10px;
+  border: 2px solid white;
+  color: white;
+}
+
+#logo a {
+  font-family: 'Beth Ellen', cursive;
+  color: white;
+}
+
+#logo a:hover {
+  color: rgb(30, 193, 205);
+}
+
 .menu {
   display: flex;
   font-family: 'Rubik', sans-serif;
-  /* display: inline-block; */
 }
 
 .menu li {
-  margin-left: 10px;
+  margin-left: 50px;
   list-style-type: none;
   color: white;
   padding-top: 5px;
 }
 
 .menu li a {
-  padding: 10px;
   text-decoration: none;
 }
 
@@ -313,30 +330,10 @@ li a:active {
   color:white;
 }
 
-#logo {
-  font-family: 'Beth Ellen', cursive;
-  text-decoration: none;
-  font-size: 1.2em;
-  margin-left: 70px;
-  margin-right: 70px;
-  padding: 0px 10px 5px 10px;
-  border: 2px solid white;
-  color: white;
-}
-
-#logo a {
-  font-family: 'Beth Ellen', cursive;
-  color: white;
-}
-
-#logo a:hover {
-  color: rgb(30, 193, 205);
-}
-
 #download {
   font-size: 0.6em;
   font-weight: bold;
-  margin-left: 12em;
+  margin-left: 200px;
   margin-top: 5px; 
   color: rgb(5, 135, 163);
 }
@@ -359,9 +356,10 @@ li a:active {
   margin-right: 4em;
 }
 
-.intro/phone {
-  justify-content: center;
+.intro-phone {
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -369,20 +367,89 @@ h1 {
   font-size: 3em;
   font-weight: normal;
   color: white;
-  justify-content: center;
-  width: 80%;
+  margin: 50px 250px 20px 250px;
 }
 
 h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: normal;
   color: white;
-  justify-content: center;
-  width: 60%;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+}
+
+#button1 {
+  text-decoration: none;
+}
+
+#button1 p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(33, 199, 210);
+  padding: 10px 35px 10px 35px;
+  border: 1px solid rgb(33, 199, 210);
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 0px;
+}
+
+#button1 a {
+  text-decoration: none;
+}
+
+#button1 a:visited {
+  color:white;
+}
+
+#button1 a:active {
+  color:white;
+}
+
+#button1 p:hover {
+  color:rgb(33, 199, 210);
+  background-color: white;
+  border-color: white;
+}
+
+#button2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: rgb(30, 193, 205);
+  text-decoration: none;
+  padding: 10px 35px 10px 35px;
+  margin-bottom: 50px;
+}
+
+#button2 a {
+
+}
+
+#button2 a:visited {
+  color: rgb(30, 193, 205);
+}
+
+#button2 a:active {
+  color: rgb(30, 193, 205);
+}
+
+#button2 p:hover {
+  color:white;
 }
 
 #image {
-  justify-content: center;
   flex-direction: row;
+  display: block;
+}
+
+#image img {
+  /* background-color: #000; */
+  max-width: 400px;
 }
