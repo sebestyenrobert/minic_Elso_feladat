@@ -24,8 +24,25 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
 
   <meta name="theme-color" content="#fafafa">
-</head>
 
+  <!-- jQuert és JavaScript a header sticky-hez -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    // $(document).ready(function() {
+    //   $(window).on('scroll', function() {
+    //     $('.header').toggleClass('hide')
+    //   })
+    // })
+
+    var zero = 0;
+    $(document).ready(function() {
+      $(window).on('scroll', function() {
+        $('.header').toggleClass('hide', $(window).scrollTop() > zero);
+        zero = $(window).scrollTop();
+      })
+    })
+  </script>
+</head>
 <body>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -34,14 +51,24 @@
   <!-- az oldal tartalma itt kezdődik -->
   <header class="header">
     <a href="#" id="logo">Comin</a> 
-    <ul class="menu">
-      <li><a href="#" >Products</a></li>
-      <li><a href="#" >About Us</a></li>
-      <li><a href="#" >Blog</a></li>
-      <li id="download"><a href="#">DOWNLOAD THE APP</a></li>
-      <li id="lang"><a href="#">eng</a></li>
-    </ul>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" >Products</a></li>
+        <li><a href="#" >About Us</a></li>
+        <li><a href="#" >Blog</a></li>
+        <li id="download"><a href="#">Download the app</a></li>
+        <li id="lang"><a href="#">eng</a></li>
+      </ul>
+    </nav>
   </header>
+  <!-- <script type="text/javascript">
+    $(domcument).ready(function() {
+      $(window).on('scroll', function() {
+        $('.header').toggleClass('hide', $(window).scrollTop() > zero);
+        zero = $(window).scrollTop();
+      })
+    })
+  </script> -->
   <section class="intro-phone">
     <div>
         <h1>Your modern and simple way of buying reliable insurance.</h1>    
@@ -50,8 +77,8 @@
         <h2>Easy insurance. Your way. Great prices.</h2>
     </div>
     <div class="buttons">
-        <a href="#" id="button1"><p>CHECK OUR PRODUCTS</p></a>
-        <a href="#" id="button2"><p>READ OUR STORY&nbsp;&nbsp;&nbsp;&nbsp;&#9654;</p></a>
+        <a href="#" id="button1"><p>Check our products</p></a>
+        <a href="#" id="button2"><p>Read our story&nbsp;&nbsp;&nbsp;&nbsp;&#9654;</p></a>
     </div>
     <div id="image">
       <img src="img/img-phone.png">

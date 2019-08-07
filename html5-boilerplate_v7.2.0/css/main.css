@@ -277,6 +277,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* display: block; */
+  transition: .5s;
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 #logo {
@@ -333,9 +343,10 @@ li a:active {
 #download {
   font-size: 0.6em;
   font-weight: bold;
-  margin-left: 200px;
+  margin-left: 250px;
   margin-top: 5px; 
   color: rgb(5, 135, 163);
+  text-transform: uppercase;
 }
 
 #download a {
@@ -354,12 +365,14 @@ li a:active {
 
 #lang {
   margin-right: 4em;
+  margin-left: 20px;
 }
 
 .intro-phone {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
 }
 
 h1 {
@@ -380,6 +393,7 @@ h2 {
 
 .buttons {
   display: flex;
+  text-transform: uppercase;
 }
 
 #button1 {
