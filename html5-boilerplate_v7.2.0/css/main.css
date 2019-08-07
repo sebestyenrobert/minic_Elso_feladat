@@ -464,6 +464,29 @@ h2 {
 }
 
 #image img {
-  /* background-color: #000; */
   max-width: 400px;
+}
+
+.partner {
+  font-family: 'Rubik', sans-serif;
+}
+
+.text {
+  background-color: rgb(238, 241, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: normal;
+  color: rgb(44, 44, 44);
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: normal;
+  color: rgb(110, 110, 110);
+  text-align: center;
 }
