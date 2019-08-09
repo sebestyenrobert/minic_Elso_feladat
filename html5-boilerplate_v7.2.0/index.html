@@ -28,12 +28,6 @@
   <!-- jQuert és JavaScript a header sticky-hez -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script type="text/javascript">
-    // $(document).ready(function() {
-    //   $(window).on('scroll', function() {
-    //     $('.header').toggleClass('hide')
-    //   })
-    // })
-
     var zero = 0;
     $(document).ready(function() {
       $(window).on('scroll', function() {
@@ -42,13 +36,26 @@
       })
     })
   </script>
+
+  <!-- carousel-hez -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick/slick.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.carousel').slick();
+    });
+  </script>
 </head>
 <body>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- az oldal tartalma itt kezdődik -->
+  <!-- Az oldal tartalma itt kezdődik -->
   <header class="header">
     <a href="#" id="logo">Comin</a> 
     <nav>
@@ -61,6 +68,7 @@
       </ul>
     </nav>
   </header>
+
   <section class="intro-phone">
     <div>
         <h1>Your modern and simple way of buying reliable insurance.</h1>    
@@ -76,6 +84,7 @@
       <img src="img/img-phone.png">
     </div>
   </section>
+
   <section class="partner">
     <div class="text">
     <h3>Innovacion Backed by Legacy</h3>
@@ -84,9 +93,20 @@
       an estabilished insurance 
       company with more than 50 years of experiance in the industry.</h4>
     </div>
-    <div class="carousel"></div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <div class="carousel">
+      <div><img src="img/logo1.jpg"></div>
+      <div><img src="img/logo2.jpg"></div>
+      <div><img src="img/logo3.jpg"></div>
+      <div><img src="img/logo4.jpg"></div>
+    </div>
+
   </section>
-  <!-- az oldal tartalma itt véget ér -->
+  <!-- Az oldal tartalma itt véget ér -->
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
