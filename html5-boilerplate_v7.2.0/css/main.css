@@ -268,7 +268,7 @@ textarea {
 /* Saját css */
 
 body {
-  background-image: linear-gradient( rgb(5, 135, 163), rgb(30, 193, 205));
+  background-image: linear-gradient( rgb(5, 135, 163), rgb(29, 189, 202));
 }
 
 .header {
@@ -468,7 +468,7 @@ h2 {
 }
 
 .text {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(238, 241, 242);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -522,16 +522,23 @@ h4 {
 color: black;
 }
 
-
 .slick-slide {
 transition: all ease-in-out .3s;
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  
 }
 
-#title-box {
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-box {
   font-family: 'Rubik', sans-serif;
   font-size: 8pt;
   font-weight: bold;
@@ -539,40 +546,88 @@ footer {
   color: rgb(183, 183, 183)
 }
 
-#list-box {
+.list-box {
   font-size: 10pt;
   font-family: 'Rubik', sans-serif;
   color: rgb(76, 77, 78);
 }
 
-#list-box a {
+.list-box a {
   text-decoration: none;
 }
 
-#list-box a:visited {
+.list-box a:visited {
   color: rgb(76, 77, 78);
 }
 
-#list-box a:hover {
+.list-box a:hover {
   color: rgb(114, 217, 224);
 }
 
-#list-box-download {
-  font-size: 10pt;
+#footer-col-1, #footer-col-2 {
+  padding-left: 130px;
+}
+
+#footer-col-3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 265px;
+}
+
+.list-box-download {
+  font-size: 9pt;
   font-family: 'Rubik', sans-serif;
   color: rgb(114, 217, 224);
 }
 
+.list-box-download a {
+  text-decoration: none;
+  color: rgb(114, 217, 224);
+}
+
+.list-box-download a:hover {
+  color: rgb(76, 77, 78);
+}
+
 .icons1{
-  width: 16px;
-  /* color: rgb(114, 217, 224); */
+  width: 15px;
+}
+
+.flag-icons {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  padding-top: 50px;
 }
 
 .icons2{
-  width: 20px;
-  /* color: rgb(114, 217, 224); */
+  width: 24px;
+  padding-right: 14px;
+  padding-bottom: 30px;
 }
 
-/* .col-xs-2 {
-  padding-left: 0px;
-} */
+hr {
+  border-width: 2px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 8pt;
+  font-family: 'Rubik', sans-serif;
+  color: rgb(142, 142, 142);
+  padding: 0px 130px 16px 130px;
+}
+
+.footer-bottom-links a {
+  text-decoration: none;
+}
+
+.footer-bottom-links a:visited {
+  color: rgb(142, 142, 142);
+}
+
+.footer-bottom-links a:hover {
+  color: black;
+}
