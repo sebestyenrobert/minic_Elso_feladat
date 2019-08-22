@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <title>Comin</title>
@@ -13,6 +12,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- Offer popup-hoz -->
+  
 
   <!-- flex grid rendszer használatához -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
@@ -159,8 +161,44 @@
       <div class="footer-bottom-copyright">
         &copy; Copyright 2018 COMIN. All rights reserved.
       </div>
-    </div>  
+    </div>   
   </footer>
+
+  <div id="offer-popup">
+    <div id="text1">
+      Get 25% of discount <br>on your first policy order
+    </div>
+    <div id="text2">
+      Enter your email to send <br>you a promocode
+    </div>
+    <div id="input">
+        <input type="text" name="email-input" value="Enter your email" id="email-input">
+    </div>
+    <div id="send">
+      <a onclick="pop()" class="send-button">Send</a>
+    </div>
+    
+  </div>
+  <!-- <div id="offer-popup">
+    <span class="ion-checkmark-round"></span>
+    
+
+    <a class="close">Close</a>
+  </div> -->
+
+  <!-- JavaScript az offer popup-hoz -->
+  <script type="text/javascript">
+    var c = 0;
+    function pop() {
+      if (c == 0) {
+        document.getElementById("offer-popup").style.display = "block";
+        c = 1;
+      } else {
+        document.getElementById("offer-popup").style.display = "none";
+        c = 0;
+      }
+    }
+  </script>
 
   <!-- jQuery és JavaScript a carousel-hez -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -176,7 +214,6 @@
     });
   </script>
 
-  </section>
   <!-- Az oldal tartalma itt véget ér -->
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
