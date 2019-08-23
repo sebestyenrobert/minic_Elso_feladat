@@ -450,13 +450,29 @@ h2 {
   color:white;
 }
 
-#image {
-  flex-direction: row;
+#phone-images {
   display: block;
+  flex-direction: row;
 }
 
-#image img {
-  max-width: 400px;
+#img-phone {
+  width: 400px;
+}
+
+#img-phone-inner {
+  width: 440px;
+  position: relative;
+  margin-left: -388px;
+  margin-top: -10px;
+  z-index: -2;
+}
+
+#overlay {
+  background-image: linear-gradient( rgb(11, 148, 173), rgb(17, 162, 182));
+  width: 100px;
+  height: 500px; 
+  margin-top: -500px;
+  margin-left: 360px;
 }
 
 .partner {
@@ -636,7 +652,8 @@ hr {
   align-items: center;
   width: 100%;
   top: 68%;
-  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(12, 101, 124);
   font-size: 12px;
   font-family: 'Rubik', sans-serif;
